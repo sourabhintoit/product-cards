@@ -1,0 +1,91 @@
+body{
+    background-color: royalblue;
+}
+
+.display1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 325px;
+    height: 700px;
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    width: 320px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.card:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    transition: 1s;
+}
+
+.card-img{
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    border-radius: 50%;
+}
+
+.card-img:hover{
+    background-color: aqua;
+    transition: 1s;
+}
+
+.card-content{
+    position: relative;
+    text-align: center;
+}
+
+.card-head{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.card-subhead{
+    margin-top: -30px;
+    color: gray;
+}
+
+.price{
+    font-size: 2em;
+    color: red;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.card-content::after{
+    content: "NIKE";
+    position: absolute;
+    font-size: 7em;
+    opacity: .2;
+    margin-left: -70%;
+    margin-top: -80%;
+    transform: skewY(-20deg);
+    color: rgba(251, 251, 0, 0.931);
+}
+
+.buy{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.buy:hover{
+    color: white;
+    background-color: coral;
+}
